@@ -113,6 +113,7 @@ window.addEventListener('DOMContentLoaded', () => {
         notSolutionB.textContent = '';
         solutionBoth.textContent = '';
         solutionAny.textContent = '';
+        solutionOr.textContent = '';
         solutionConditional.textContent = '';
         solutionA.insertAdjacentHTML('beforeend', 'P(A) = n / m <br>');
         solutionA.insertAdjacentHTML('beforeend', `P(A) = ${outcomesCalculatorA} / ${generalCalculator}`);
@@ -148,6 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
       solutionBoth.textContent = '';
       solutionAny.textContent = '';
       solutionConditional.textContent = '';
+      solutionOr.textContent = '';
     };
     centerCalculateMany.addEventListener('click', coming);
     centerResetMany.addEventListener('click', resetDelete);

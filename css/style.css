@@ -118,11 +118,12 @@ form {
   gap: 20px;
 }
 .calculator_elem {
-  flex-basis: 35%;
+  flex-basis: 40%;
   border: 1px solid blue;
   padding: 10px;
   border-radius: 5px;
   min-height: 215px;
+  font-size: 14px;
 }
 .calculator__result input {
   padding: 8px;
