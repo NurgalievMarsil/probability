@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator__container">
+      <div class="select">
+        <select name="" id="" class="calc-type">
+          <option value="0">Выберите пример</option>
+          <option value="1">Вероятность наступления единичного события</option>
+          <option value="2">Вероятность наступления множественного события</option>
+        </select>
+        <button class="select__button">Показать</button>
+      </div>
+      <form action="" class="form__one">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">Вероятность наступления единичного события</h2>
+            <label for="">количество исходов, благоприятствующих событию  n</label>
+            <input type="text" id="calculator__outcomes">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="calculator__general">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate">
+            <input type="reset" value="Сбросить" id="center__reset">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="solution"></div>
+            <label for="">Вероятность наступившего события P(A):</label>
+            <input type="text" id="result__coming">
+            <div class="not__solution"></div>
+            <label for="">Вероятность ненаступившего события P(A'):</label>
+            <input type="text" id="result__notcoming">
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__second">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">Вероятность наступления множественного события</h2>
+            <label for="">количество исходов, благоприятствующих событию  n(A)</label>
+            <input type="text" id="calculator__outcomes-a">
+            <label for="">количество исходов, благоприятствующих событию  n(B)</label>
+            <input type="text" id="calculator__outcomes-b">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="calculator__general-many">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-many">
+            <input type="reset" value="Сбросить" id="center__reset-many">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_coming-a calculator_elem">
+                <div class="solution-a"></div>
+                <label for="">Вероятность наступившего события <br>P(A):</label>
+                <input type="text" id="result__coming-a">
+              </div>
+              <div class="calculator_notcoming-a calculator_elem">
+                <div class="not__solution-a"></div>
+                <label for="">Вероятность ненаступившего события <br>P(A'):</label>
+                <input type="text" id="result__notcoming-a">
+              </div>
+              <div class="calculator_coming-b calculator_elem">
+                <div class="solution-b"></div>
+                <label for="">Вероятность наступившего события <br>P(B):</label>
+                <input type="text" id="result__coming-b">
+              </div>
+              <div class="calculator_notcoming-b calculator_elem">
+                <div class="not__solution-b"></div>
+                <label for="">Вероятность ненаступившего события <br>P(B'):</label>
+                <input type="text" id="result__notcoming-b">
+              </div>
+              <div class="calculator_both calculator_elem">
+                <div class="solution-both"></div>
+                <label for="">Вероятность что наступят оба события <br>P(A ∩ B):</label>
+                <input type="text" id="result__both">
+              </div>
+              <div class="calculator_or calculator_elem">
+                <div class="solution-or"></div>
+                <label for="">Вероятность что один из случая возникает <br>P(A или B):</label>
+                <input type="text" id="result__or">
+              </div>
+              <div class="calculator_any calculator_elem">
+                <div class="solution-any"></div>
+                <label for="">Вероятность что любой из случая возникает <br>P(A ∪ B)</label>
+                <input type="text" id="result__any">
+              </div>
+              <div class="calculator_conditional calculator_elem">
+                <div class="solution-conditional"></div>
+                <label for="">Вероятность наступления события A при условии, что событие B произошло <br>P(A | B)</label>
+                <input type="text" id="result__conditional">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
