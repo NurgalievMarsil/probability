@@ -16,6 +16,11 @@
           <option value="0">Выберите пример</option>
           <option value="1">Вероятность наступления единичного события</option>
           <option value="2">Вероятность наступления множественного события</option>
+          <option value="3">ОГЭ пирожки</option>
+          <option value="4">ЕГЭ база(натуральные числа)</option>
+          <option value="5">ЕГЭ профиль(олимпиада)</option>
+          <option value="6">ЕГЭ профиль(экзамен вопрос)</option>
+          <option value="7">ЕГЭ база(экзамен список)</option>
         </select>
         <button class="select__button">Показать</button>
       </div>
@@ -100,6 +105,162 @@
                 <div class="solution-conditional"></div>
                 <label for="">Вероятность наступления события A при условии, что событие B произошло <br>P(A | B)</label>
                 <input type="text" id="result__conditional">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__third">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">Огэ задание про пирожками</h2>
+            <p class="calculator__paragraph">На тарелке 20 пирожков: 7 с капустой, 8 с мясом и 5 с вишней. Какова вероятность того, что мы случайно выберем пирожок с вишней?</p>
+            <p class="calculator__explanation">Всего пирожков 20 это будет <strong>m</strong>, пирожков с вишней 5 это будет <strong>n</strong>, получается</p>
+            <label for="">количество исходов, благоприятствующих событию  n</label>
+            <input type="text" id="pies__outcomes">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="pies__general">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-pies">
+            <input type="reset" value="Сбросить" id="center__reset-pies">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_coming-pies calculator_elem">
+                <div class="solution-pies"></div>
+                <label for="">Вероятность наступившего события <br>P(A):</label>
+                <input type="text" id="result__coming-pies">
+              </div>
+              <div class="calculator_notcoming-pies calculator_elem">
+                <div class="not__solution-pies"></div>
+                <label for="">Вероятность ненаступившего события <br>P(A'):</label>
+                <input type="text" id="result__notcoming-pies">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__four">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ база задача про натуральные числа</h2>
+            <p class="calculator__paragraph">Какова вероятность того, что случайное выбранное натуральное число от 40 до 49 делится на три?</p>
+            <p class="calculator__explanation">Нужно выписать все числа от 40 до 49(всего их 10 это будет <strong>m</strong>) и найти из них те которые делятся на 3 -
+            Это 42, 45 и 48<br> То есть их всего 3 это будет <strong>n</strong></p>
+            <label for="">количество исходов, благоприятствующих событию  n</label>
+            <input type="text" id="natural__outcomes">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="natural__general">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-natural">
+            <input type="reset" value="Сбросить" id="center__reset-natural">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_coming-natural calculator_elem">
+                <div class="solution-natural"></div>
+                <label for="">Вероятность наступившего события <br>P(A):</label>
+                <input type="text" id="result__coming-natural">
+              </div>
+              <div class="calculator_notcoming-pies calculator_elem">
+                <div class="not__solution-natural"></div>
+                <label for="">Вероятность ненаступившего события <br>P(A'):</label>
+                <input type="text" id="result__notcoming-natural">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__five">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ база задача про олимпиаду</h2>
+            <p class="calculator__paragraph">На олимпиаде по русскому языку 250 участников разместили в трёх аудиториях. В первых двух удалось разместить по 120 человек, оставшихся перевели в запасную аудиторию в другом корпусе. Найдите вероятность того, что случайно выбранный участник писал олимпиаду в запасной аудитории.</p>
+            <p class="calculator__explanation">Всего участников 250 это будет <strong>m</strong>, в первой аудитории 120 человек, во второй тоже 120 человек, то есть всего 240. Значит в запасной аудитории 10 человек это будет <strong>n</strong></p>
+            <label for="">количество исходов, благоприятствующих событию  n</label>
+            <input type="text" id="olympiad__outcomes">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="olympiad__general">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-olympiad">
+            <input type="reset" value="Сбросить" id="center__reset-olympiad">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_coming-olympiad calculator_elem">
+                <div class="solution-olympiad"></div>
+                <label for="">Вероятность наступившего события <br>P(A):</label>
+                <input type="text" id="result__coming-olympiad">
+              </div>
+              <div class="calculator_notcoming-olympiad calculator_elem">
+                <div class="not__solution-olympiad"></div>
+                <label for="">Вероятность ненаступившего события <br>P(A'):</label>
+                <input type="text" id="result__notcoming-olympiad">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__six">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ профиль задача про вопрос на экзамене</h2>
+            <p class="calculator__paragraph">На экзамене 40 вопросов. Дима не выучил 6 из них. Найдите вероятность того, что ему попадется выученный вопрос.</p>
+            <p class="calculator__explanation">Дима выучил 40 - 6 = 34 вопроса это будет <strong>n</strong>. Всего вопросов 40 это будет <strong>m</strong><br> Ну или же можно выбрать 6 как <strong>n</strong> и ответ будет в ненаступившем событие</p>
+            <label for="">количество исходов, благоприятствующих событию  n</label>
+            <input type="text" id="exam__outcomes">
+            <label for="">общее количество возможных исходов m</label>
+            <input type="text" id="exam__general">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-exam">
+            <input type="reset" value="Сбросить" id="center__reset-exam">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_coming-exam calculator_elem">
+                <div class="solution-exam"></div>
+                <label for="">Вероятность наступившего события <br>P(A):</label>
+                <input type="text" id="result__coming-exam">
+              </div>
+              <div class="calculator_notcoming-exam calculator_elem">
+                <div class="not__solution-exam"></div>
+                <label for="">Вероятность ненаступившего события <br>P(A'):</label>
+                <input type="text" id="result__notcoming-exam">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__seven">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ база задача про список на экзамене</h2>
+            <p class="calculator__paragraph">На экзамене по геометрии школьник отвечает на один вопрос из списка экзаменационных вопросов. Вероятность того, что это вопрос по теме «Тригонометрия», равна 0.3. Вероятность того, что это вопрос по теме «Вписанная окружность», равна 0.25. Вопросов, которые одновременно относятся к этим двум темам, нет. Найдите вероятность того, что на экзамене школьнику достанется вопрос по одной из этих двух тем.</p>
+            <p class="calculator__explanation">Чтобы найти вероятность что попадется один из двух вопросов нужно сложить 0.3 это <strong>n1</strong> и 0.25 это <strong>n2</strong></p>
+            <label for="">количество исходов, благоприятствующих событию  n1</label>
+            <input type="text" id="list__outcomes-1">
+            <label for="">общее количество возможных исходов n2</label>
+            <input type="text" id="list__outcomes-2">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-list">
+            <input type="reset" value="Сбросить" id="center__reset-list">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_or-list">
+                <div class="solution-list"></div>
+                <label for="">Вероятность что один из случая возникает <br>P(A или B):</label>
+                <input type="text" id="result__or-list">
               </div>
             </div>
           </div>
