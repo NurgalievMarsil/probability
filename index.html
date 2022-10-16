@@ -11,6 +11,10 @@
 <body>
   <div class="calculator">
     <div class="calculator__container">
+      <div class="change__color">
+        <button class="color__button">Сменить цвет</button>
+        <button class="reset__color">Удалить цвет</button>
+      </div>
       <div class="select">
         <select name="" id="" class="calc-type">
           <option value="0">Выберите пример</option>
@@ -21,6 +25,12 @@
           <option value="5">ЕГЭ профиль(олимпиада)</option>
           <option value="6">ЕГЭ профиль(экзамен вопрос)</option>
           <option value="7">ЕГЭ база(экзамен список)</option>
+          <option value="8">ЕГЭ база-профиль(продавцы)</option>
+          <option value="9">ЕГЭ профиль(биатлонист)</option>
+          <option value="10">ОГЭ игральная кость</option>
+          <option value="11">ЕГЭ профиль(магазины)</option>
+          <option value="12">ЕГЭ профиль(посуда)</option>
+          <option value="13">ЕГЭ профиль(фонарь)</option>
         </select>
         <button class="select__button">Показать</button>
       </div>
@@ -261,6 +271,168 @@
                 <div class="solution-list"></div>
                 <label for="">Вероятность что один из случая возникает <br>P(A или B):</label>
                 <input type="text" id="result__or-list">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__eight">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ база-профиль задача про продавцов</h2>
+            <p class="calculator__paragraph">В магазине три продавца. Каждый из них занят с клиентом с вероятностью 0,6. Найдите вероятность того, что в случайный момент времени все три продавца заняты одновременно (считайте, что клиенты заходят независимо друг от друга).</p>
+            <p class="calculator__explanation">Вероятность произведения независимых событий равна произведению вероятностей этих событий. Поэтому вероятность того, что все три продавца заняты равна <strong>p(A)</strong><sup>продавцы</sup></p>
+            <label for="">верояность события</label>
+            <input type="text" id="both-probability">
+            <label for="">сколько продавцов</label>
+            <input type="text" id="both-both">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-both-probability">
+            <input type="reset" value="Сбросить" id="center__reset-both-probability">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_both-probability">
+                <div class="solution-both-probability"></div>
+                <label for="">Вероятность что все случаи возникают <br>P(A ∩ B):</label>
+                <input type="text" id="result_both-brobability">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__nine">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ профиль задача про биатлониста</h2>
+            <p class="calculator__paragraph">Биатлонист пять раз стреляет по мишеням. Вероятность попадания в мишень при одном выстреле равна 0,8. Найдите вероятность того, что биатлонист первые три раза попал в мишени, а последние два промахнулся.</p>
+            <p class="calculator__explanation">Поскольку биатлонист попадает в мишени с вероятностью <strong>P(A)</strong> он промахивается с вероятностью <strong>P(A') = 1 - P(A)</strong>. Cобытия попасть или промахнуться при каждом выстреле независимы, вероятность произведения независимых событий равна произведению их вероятностей.</p>
+            <label for="">верояность попадания A</label>
+            <input type="text" id="biathlete-probability">
+            <label for="">верояность ненаступившего попадания A'</label>
+            <input type="text" id="biathlete-not-probability">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-biathlete">
+            <input type="reset" value="Сбросить" id="center__reset-biathlete">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_biathlete">
+                <div class="solution-biathlete"></div>
+                <label for="">Вероятность события<br>P(A):</label>
+                <input type="text" id="result_biathlete">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__ten">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ОГЭ задача про кубик</h2>
+            <p class="calculator__paragraph">Игральную кость бросают дважды. Найдите вероятность того, что при первом броске выпало более трех очков, а при втором выпало от двух до четырех очков</p>
+            <p class="calculator__explanation">При первом броске выпало <strong>A</strong> = (4 или 5 или 6) т.е. <strong>3/6 = 0.5</strong> и при втором броске <strong>A</strong> = (2 или 3 или 4) т.е. <strong>3/6 = 0.5</strong></p>
+            <label for="">первый бросок A</label>
+            <input type="text" id="cube-probability">
+            <label for="">второй бросок B</label>
+            <input type="text" id="cube-probability-2">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-cube">
+            <input type="reset" value="Сбросить" id="center__reset-cube">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_cube">
+                <div class="solution-cube"></div>
+                <label for="">Вероятность события<br>P(A):</label>
+                <input type="text" id="result_cube">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__eleven">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ профиль магазины</h2>
+            <p class="calculator__paragraph">По отзывам покупателей Иван Иванович оценил надёжность двух интернет-магазинов. Вероятность того, что нужный товар доставят из магазина А, равна 0,8. Вероятность того, что этот товар доставят из магазина Б, равна 0,9. Иван Иванович заказал товар сразу в обоих магазинах. Считая, что интернет-магазины работают независимо друг от друга, найдите вероятность того, что ни один магазин не доставит товар.</p>
+            <p class="calculator__explanation">Вероятность того, что первый магазин не доставит нужный товар A'.Вероятность того, что второй магазин не доставит нужный товар B'.Поскольку эти события независимы, вероятность их произведения (оба магазина не доставят товар) равна произведению вероятностей этих событий: A'· B'</p>
+            <label for="">вероятность события первого магазина A</label>
+            <input type="text" id="shop-probability">
+            <label for="">вероятность события второго магазина B</label>
+            <input type="text" id="shop-probability-2">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-shop">
+            <input type="reset" value="Сбросить" id="center__reset-shop">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_shop">
+                <div class="solution-shop"></div>
+                <label for="">Вероятность события<br>P(A):</label>
+                <input type="text" id="result_shop">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__twelve">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ профиль посуда</h2>
+            <p class="calculator__paragraph">На фабрике керамической посуды 10% произведённых тарелок имеют дефект. При контроле качества продукции выявляется 70% дефектных тарелок. Остальные тарелки поступают в продажу. Найдите вероятность того, что произведенная тарелка поступит в продажу</p>
+            <p class="calculator__explanation">Вероятность p(A) = не дефектная(A') или дефектная(A) и не нашли брак(B')<br> 10% = 0.1 это A<br> 70% = 0.7 это B</p>
+            <label for="">имеют дефект A</label>
+            <input type="text" id="plate-probability">
+            <label for="">выявляется дефектных B</label>
+            <input type="text" id="plate-probability-2">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-plate">
+            <input type="reset" value="Сбросить" id="center__reset-plate">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_plate">
+                <div class="solution-plate"></div>
+                <label for="">Вероятность события<br>P(A):</label>
+                <input type="text" id="result_plate">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form__thirteen">
+        <div class="calculator__main">
+          <div class="calculator__first">
+            <h2 class="calculator__title">ЕГЭ профиль фонари</h2>
+            <p class="calculator__paragraph">Помещение освещается фонарём с двумя лампами. Вероятность перегорания лампы в течение года равна 0.3. Найдите вероятность того, что в течение года хотя бы одна лампа не перегорит.</p>
+            <p class="calculator__explanation">Вероятность что перегорит первая p(A) = 0.3. Вероятность что перегорит вторая p(B) = 0.3<br>Вероятность что хотя бы одна лампа не перегорит p(M) = (не перегорит первая(A') и не перегорит вторая(B')) или (перегорела первая(A) и не перегорела вторая(B')) или (не перегорела первая (A') и перегорела вторая(B))</p>
+            <label for="">вероятность перегорания первой лампы</label>
+            <input type="text" id="lamp-probability">
+            <label for="">вероятность перегорания второй лампы</label>
+            <input type="text" id="lamp-probability-2">
+          </div>
+          <div class="calculator__center">
+            <input type="button" value="Вычислить" id="center__calculate-lamp">
+            <input type="reset" value="Сбросить" id="center__reset-lamp">
+          </div>
+          <div class="calculator__result">
+            <h3 class="result__title">Результат</h3>
+            <div class="calculator__result-wrap">
+              <div class="calculator_elem calculator_lamp">
+                <div class="solution-lamp"></div>
+                <label for="">Вероятность события<br>P(A):</label>
+                <input type="text" id="result_lamp">
               </div>
             </div>
           </div>

@@ -80,97 +80,20 @@ form {
   font-size: 16px;
   margin-bottom: 10px;
 }
-#center__calculate {
+.calculator__center input:nth-child(1) {
   width: 65%;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid grey;
   cursor: pointer;
 }
-#center__calculate-many {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__calculate-pies {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__calculate-natural {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__calculate-olympiad {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__calculate-exam {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__calculate-list {
-  width: 65%;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset {
+.calculator__center input:nth-child(2) {
   padding: 8px;
   border-radius: 8px;
   border: 1px solid grey;
   cursor: pointer;
-}
-#center__reset-many {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset-pies {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset-natural {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset-olympiad {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset-exam {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-#center__reset-list {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
+} 
+
 .calculator__result {
   margin-top: 15px;
   padding-top: 5px;
@@ -194,7 +117,7 @@ form {
 }
 .calculator_elem {
   flex-basis: 40%;
-  border: 1px solid blue;
+  border: 1px solid black;
   padding: 10px;
   border-radius: 5px;
   min-height: 215px;
@@ -202,6 +125,24 @@ form {
 }
 .calculator_or-list {
   flex-basis: 80%;
+}
+.calculator_both-probability {
+  flex-basis: 80%;
+}
+.calculator_biathlete {
+  flex-basis: 90%;
+}
+.calculator_cube {
+  flex-basis: 90%;
+}
+.calculator_shop {
+  flex-basis: 90%;
+}
+.calculator_plate {
+  flex-basis: 90%;
+}
+.calculator_lamp {
+  flex-basis: 90%;
 }
 .calculator__result input {
   padding: 8px;
@@ -249,9 +190,56 @@ form {
 .form__seven {
   display: none;
 }
+.form__eight {
+  display: none;
+}
+.form__nine {
+  display: none;
+}
+.form__ten {
+  display: none;
+}
+.form__eleven {
+  display: none;
+}
+.form__twelve {
+  display: none;
+}
+.form__thirteen {
+  display: none;
+}
 .select__button {
   border: 1px solid black;
   padding: 5px;
   margin-top: 5px;
   border-radius: 7px;
+}
+.change__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.color__button {
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+}
+.color__button:hover {
+  border: 2px solid blue;
+  background-color: #080808;
+}
+.reset__color {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: #fff;
+  margin-left: 10px;
+}
+.reset__color:hover {
+  border: 2px solid blue;
+  background-color: #080808;
 }

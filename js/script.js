@@ -1,4 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
+  const changeColor = () => {
+    const colorBtn = document.querySelector('.color__button'),
+      resetColorBtn = document.querySelector('.reset__color'),
+      calculatorContainer = document.querySelector('.calculator__container');
+    colorBtn.addEventListener('click', () => {
+      let randomColor = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
+      calculatorContainer.style.background = randomColor;
+    });
+    resetColorBtn.addEventListener('click', () => {
+      calculatorContainer.style.background = '#c9fff9';
+    });
+  };
+  changeColor();
   const selectCalculator = () => {
     const formOne = document.querySelector('.form__one'),
     formSecond = document.querySelector('.form__second'),
@@ -7,6 +20,12 @@ window.addEventListener('DOMContentLoaded', () => {
     formFive = document.querySelector('.form__five'),
     formSix = document.querySelector('.form__six'),
     formSeven = document.querySelector('.form__seven'),
+    formEight = document.querySelector('.form__eight'),
+    formNine = document.querySelector('.form__nine'),
+    formTen = document.querySelector('.form__ten'),
+    formEleven = document.querySelector('.form__eleven'),
+    formTwelve = document.querySelector('.form__twelve'),
+    formThirteen = document.querySelector('.form__thirteen');
     selectButton = document.querySelector('.select__button');
     selectButton.addEventListener('click', () => {
       const calcType = document.querySelector('.calc-type');
@@ -19,6 +38,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 1) {
         formOne.style.display = 'block';
@@ -28,6 +53,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 2) {
         formOne.style.display = 'none';
@@ -37,6 +68,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 3) {
         formOne.style.display = 'none';
@@ -46,6 +83,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 4) {
         formOne.style.display = 'none';
@@ -55,6 +98,11 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 5) {
         formOne.style.display = 'none';
@@ -64,6 +112,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'block';
         formSix.style.display = 'none';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 6) {
         formOne.style.display = 'none';
@@ -73,6 +127,12 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'block';
         formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
       if (typeValue === 7) {
         formOne.style.display = 'none';
@@ -82,11 +142,117 @@ window.addEventListener('DOMContentLoaded', () => {
         formFive.style.display = 'none';
         formSix.style.display = 'none';
         formSeven.style.display = 'block';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 8) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'block';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 9) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'block';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 10) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'block';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 11) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'block';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 12) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'block';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValue === 13) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'block';
       }
     });
   };
   selectCalculator();
   const calculatorOutcomes = document.getElementById('calculator__outcomes'),
+      biathleteProbability = document.getElementById('biathlete-probability'),
+      biathleteNotProbability = document.getElementById('biathlete-not-probability'),
+      cubeProbability = document.getElementById('cube-probability'),
+      cubeProbabilitySecond = document.getElementById('cube-probability-2'),
+      shopProbability = document.getElementById('shop-probability'),
+      shopProbabilitySecond = document.getElementById('shop-probability-2'),
+      plateProbability = document.getElementById('plate-probability'),
+      plateProbabilitySecond = document.getElementById('plate-probability-2'),
+      lampProbability = document.getElementById('lamp-probability'),
+      lampProbabilitySecond = document.getElementById('lamp-probability-2'),
       listOutcomesOne = document.getElementById('list__outcomes-1'),
       listOutcomesSecond = document.getElementById('list__outcomes-2'),
       calculatorOutcomesA = document.getElementById('calculator__outcomes-a'),
@@ -101,6 +267,8 @@ window.addEventListener('DOMContentLoaded', () => {
       olympiadGeneral = document.getElementById('olympiad__general'),
       examGeneral = document.getElementById('exam__general'),
       naturalGeneral = document.getElementById('natural__general'),
+      bothBoth = document.getElementById('both-both'),
+      bothProbability = document.getElementById('both-probability'),
       centerCalculate = document.getElementById('center__calculate'),
       centerCalculateMany = document.getElementById('center__calculate-many'),
       centerCalculatePies = document.getElementById('center__calculate-pies'),
@@ -108,6 +276,12 @@ window.addEventListener('DOMContentLoaded', () => {
       centerCalculateExam = document.getElementById('center__calculate-exam'),
       centerCalculateNatural = document.getElementById('center__calculate-natural'),
       centerCalculateList = document.getElementById('center__calculate-list'),
+      centerCalculateBothProbability = document.getElementById('center__calculate-both-probability'),
+      centerCalculateBiathlete = document.getElementById('center__calculate-biathlete'),
+      centerCalculateCube = document.getElementById('center__calculate-cube'),
+      centerCalculateShop = document.getElementById('center__calculate-shop'),
+      centerCalculatePlate = document.getElementById('center__calculate-plate'),
+      centerCalculateLamp = document.getElementById('center__calculate-lamp'),
       centerReset = document.getElementById('center__reset'),
       centerResetMany = document.getElementById('center__reset-many'),
       centerResetPies = document.getElementById('center__reset-pies'),
@@ -115,6 +289,12 @@ window.addEventListener('DOMContentLoaded', () => {
       centerResetExam = document.getElementById('center__reset-exam'),
       centerResetNatural = document.getElementById('center__reset-natural'),
       centerResetList = document.getElementById('center__reset-list'),
+      centerResetBothProbability = document.getElementById('center__reset-both-probability'),
+      centerResetBiathlete = document.getElementById('center__reset-biathlete'),
+      centerResetCube = document.getElementById('center__reset-cube'),
+      centerResetShop = document.getElementById('center__reset-shop'),
+      centerResetPlate = document.getElementById('center__reset-plate'),
+      centerResetLamp = document.getElementById('center__reset-lamp'),
       resultComing = document.getElementById('result__coming'),
       resultComingA = document.getElementById('result__coming-a'),
       resultComingB = document.getElementById('result__coming-b'),
@@ -130,6 +310,12 @@ window.addEventListener('DOMContentLoaded', () => {
       resultNotComingExam = document.getElementById('result__notcoming-exam'),
       resultNotComingNatural = document.getElementById('result__notcoming-natural'),
       resultBoth = document.getElementById('result__both'),
+      resultBothProbability = document.getElementById('result_both-brobability'),
+      resultBiathlete = document.getElementById('result_biathlete'),
+      resultCube = document.getElementById('result_cube'),
+      resultShop = document.getElementById('result_shop'),
+      resultPlate = document.getElementById('result_plate'),
+      resultLamp = document.getElementById('result_lamp'),
       resultAny = document.getElementById('result__any'),
       resultConditional = document.getElementById('result__conditional'),
       resultOr = document.getElementById('result__or'),
@@ -137,6 +323,11 @@ window.addEventListener('DOMContentLoaded', () => {
       solution = document.querySelector('.solution'),
       solutionA = document.querySelector('.solution-a'),
       solutionB = document.querySelector('.solution-b'),
+      solutionBiathlete = document.querySelector('.solution-biathlete'),
+      solutionCube = document.querySelector('.solution-cube'),
+      solutionShop = document.querySelector('.solution-shop'),
+      solutionPlate = document.querySelector('.solution-plate'),
+      solutionLamp = document.querySelector('.solution-lamp'),
       solutionPies = document.querySelector('.solution-pies'),
       solutionOlympiad = document.querySelector('.solution-olympiad'),
       solutionExam = document.querySelector('.solution-exam'),
@@ -150,6 +341,7 @@ window.addEventListener('DOMContentLoaded', () => {
       notSolutionExam = document.querySelector('.not__solution-exam'),
       notSolutionNatural = document.querySelector('.not__solution-natural'),
       solutionBoth = document.querySelector('.solution-both'),
+      solutionBothProbability = document.querySelector('.solution-both-probability'),
       solutionAny = document.querySelector('.solution-any'),
       solutionConditional = document.querySelector('.solution-conditional'),
       solutionOr = document.querySelector('.solution-or');
@@ -400,4 +592,149 @@ window.addEventListener('DOMContentLoaded', () => {
     centerResetList.addEventListener('click', resetDelete);
   };
   calculatorSeven();
+  const calculatorEight = () => {
+    const coming = () => {
+      const outcomesBoth = bothBoth.value,
+      degreeBoth = bothProbability.value;
+      let bothProbabilityResult = degreeBoth ** outcomesBoth;
+      bothProbabilityResult = bothProbabilityResult.toFixed(3);
+      if (isNaN(bothProbabilityResult)) {
+        resultBothProbability.value = '';
+      } else {
+        solutionBothProbability.textContent = '';
+        solutionBothProbability.insertAdjacentHTML('beforeend', 'P(A ∩ B) = P(A) <sup>степень</sup> <br>');
+        solutionBothProbability.insertAdjacentHTML('beforeend', `P(A ∩ B) = ${degreeBoth} <sup>${outcomesBoth}</sup>`);
+        resultBothProbability.value = bothProbabilityResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionBothProbability.textContent = '';
+    };
+    centerCalculateBothProbability.addEventListener('click', coming);
+    centerResetBothProbability.addEventListener('click', resetDelete);
+  };
+  calculatorEight();
+  const calculatorNine = () => {
+    const coming = () => {
+      const probabilityBiathlet = biathleteProbability.value,
+      notProbabilityBiathlet = biathleteNotProbability.value;
+      let biathleteResult = (probabilityBiathlet * probabilityBiathlet * probabilityBiathlet) * (notProbabilityBiathlet * notProbabilityBiathlet);
+      biathleteResult = biathleteResult.toFixed(2);
+      if (isNaN(biathleteResult)) {
+        resultBiathlete.value = '';
+      } else {
+        solutionBiathlete.textContent = '';
+        solutionBiathlete.insertAdjacentHTML('beforeend', `P(A) = A * A * A * A'* A' <br>`);
+        solutionBiathlete.insertAdjacentHTML('beforeend', `P(A) = ${probabilityBiathlet} * ${probabilityBiathlet} * ${probabilityBiathlet} * ${notProbabilityBiathlet}
+        * ${notProbabilityBiathlet}`);
+        resultBiathlete.value = biathleteResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionBiathlete.textContent = '';
+    };
+    centerCalculateBiathlete.addEventListener('click', coming);
+    centerResetBiathlete.addEventListener('click', resetDelete);
+  };
+  calculatorNine();
+  const calculatorTen = () => {
+    const coming = () => {
+      const probabilityCube = cubeProbability.value,
+      secondProbabilityCube = cubeProbabilitySecond.value;
+      let cubeResult = (probabilityCube * secondProbabilityCube);
+      cubeResult = cubeResult.toFixed(2);
+      if (isNaN(cubeResult)) {
+        resultCube.value = '';
+      } else {
+        solutionCube.textContent = '';
+        solutionCube.insertAdjacentHTML('beforeend', `P(A) = A * B <br>`);
+        solutionCube.insertAdjacentHTML('beforeend', `P(A) = ${probabilityCube} * ${secondProbabilityCube}`);
+        resultCube.value = cubeResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionCube.textContent = '';
+    };
+    centerCalculateCube.addEventListener('click', coming);
+    centerResetCube.addEventListener('click', resetDelete);
+  };
+  calculatorTen();
+  const calculatorEleven = () => {
+    const coming = () => {
+      const probabilityShop = shopProbability.value,
+      secondProbabilityShop = shopProbabilitySecond.value;
+      let notProbabilityShop = 1 - probabilityShop,
+        notSecondProbabilityShop = 1 - secondProbabilityShop;
+      notProbabilityShop = notProbabilityShop.toFixed(1);
+      notSecondProbabilityShop = notSecondProbabilityShop.toFixed(1);
+      let shopResult = (notProbabilityShop * notSecondProbabilityShop);
+      shopResult = shopResult.toFixed(2);
+      if (isNaN(shopResult)) {
+        resultShop.value = '';
+      } else {
+        solutionShop.textContent = '';
+        solutionShop.insertAdjacentHTML('beforeend', `P(A) = A' * B' <br>`);
+        solutionShop.insertAdjacentHTML('beforeend', `P(A) = ${notProbabilityShop} * ${notSecondProbabilityShop}`);
+        resultShop.value = shopResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionShop.textContent = '';
+    };
+    centerCalculateShop.addEventListener('click', coming);
+    centerResetShop.addEventListener('click', resetDelete);
+  };
+  calculatorEleven();
+  const calculatorTwelve = () => {
+    const coming = () => {
+      const probabilityPlate = +plateProbability.value,
+      secondProbabilityPlate = +plateProbabilitySecond.value;
+      let notProbabilityPlate = 1 - probabilityPlate,
+        notSecondProbabilityPlate = 1 - secondProbabilityPlate;
+      let plateResult = notProbabilityPlate + (probabilityPlate * notSecondProbabilityPlate);
+      notSecondProbabilityPlate = notSecondProbabilityPlate.toFixed(1);
+      plateResult = plateResult.toFixed(2);
+      if (isNaN(plateResult)) {
+        resultPlate.value = '';
+      } else {
+        solutionPlate.textContent = '';
+        solutionPlate.insertAdjacentHTML('beforeend', `P(A) = A' * B' <br>`);
+        solutionPlate.insertAdjacentHTML('beforeend', `P(A) = ${notProbabilityPlate} + (${probabilityPlate} * ${notSecondProbabilityPlate})`);
+        resultPlate.value = plateResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionPlate.textContent = '';
+    };
+    centerCalculatePlate.addEventListener('click', coming);
+    centerResetPlate.addEventListener('click', resetDelete);
+  };
+  calculatorTwelve();
+  const calculatorThirteen = () => {
+    const coming = () => {
+      const probabilityLamp = +lampProbability.value,
+      secondProbabilityLamp = +lampProbabilitySecond.value;
+      let notProbabilityLamp = 1 - probabilityLamp,
+        notSecondProbabilityLamp = 1 - secondProbabilityLamp;
+      let lampResult = (notProbabilityLamp * notSecondProbabilityLamp) + (probabilityLamp * notSecondProbabilityLamp) + (notProbabilityLamp * secondProbabilityLamp);
+      notProbabilityLamp = notProbabilityLamp.toFixed(1);
+      notSecondProbabilityLamp = notSecondProbabilityLamp.toFixed(1);
+      lampResult = lampResult.toFixed(2);
+      if (isNaN(lampResult)) {
+        resultLamp.value = '';
+      } else {
+        solutionLamp.textContent = '';
+        solutionLamp.insertAdjacentHTML('beforeend', `P(A) = (A' * B') + (A * B') + (A' * B) <br>`);
+        solutionLamp.insertAdjacentHTML('beforeend', `P(A) = (${notProbabilityLamp} * ${notSecondProbabilityLamp}) + (${probabilityLamp} * ${notSecondProbabilityLamp})
+        + (${notProbabilityLamp} * ${secondProbabilityLamp})`);
+        resultLamp.value = lampResult;
+      }
+    };
+    const resetDelete = () => {
+      solutionLamp.textContent = '';
+    };
+    centerCalculateLamp.addEventListener('click', coming);
+    centerResetLamp.addEventListener('click', resetDelete);
+  };
+  calculatorThirteen();
 });
