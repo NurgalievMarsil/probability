@@ -159,15 +159,14 @@ form {
 }
 .select {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
   margin-bottom: 10px;
 }
-.calc-type {
+.calkich {
   padding: 7px;
   border-radius: 10px;
-  width: 50%;
+  width: 25%;
 }
 .form__one {
   display: none;

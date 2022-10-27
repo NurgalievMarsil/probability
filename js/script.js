@@ -28,9 +28,15 @@ window.addEventListener('DOMContentLoaded', () => {
     formThirteen = document.querySelector('.form__thirteen');
     selectButton = document.querySelector('.select__button');
     selectButton.addEventListener('click', () => {
-      const calcType = document.querySelector('.calc-type');
-      const typeValue = +calcType.options[calcType.selectedIndex].value;
-      if (typeValue === 0) {
+      const calcOne = document.querySelector('.type-1');
+      const calcSecond = document.querySelector('.type-2');
+      const calcThree = document.querySelector('.type-3');
+
+      let typeValueOne = +calcOne.options[calcOne.selectedIndex].value;
+      let typeValueSecond = +calcSecond.options[calcSecond.selectedIndex].value;
+      let typeValueThree = +calcThree.options[calcThree.selectedIndex].value;
+
+      if (typeValueOne === 0) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -45,8 +51,8 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 1) {
-        formOne.style.display = 'block';
+      if (typeValueSecond === 0) {
+        formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
         formFour.style.display = 'none';
@@ -60,9 +66,9 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 2) {
+      if (typeValueThree === 0) {
         formOne.style.display = 'none';
-        formSecond.style.display = 'block';
+        formSecond.style.display = 'none';
         formThird.style.display = 'none';
         formFour.style.display = 'none';
         formFive.style.display = 'none';
@@ -75,7 +81,8 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 3) {
+
+      if (typeValueOne === 3) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'block';
@@ -90,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 4) {
+      if (typeValueSecond === 4) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -104,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 5) {
+      if (typeValueThree === 5) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -119,7 +126,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 6) {
+      if (typeValueThree === 6) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -134,7 +141,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 7) {
+      if (typeValueSecond === 7) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -149,7 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 8) {
+      if (typeValueSecond === 8) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -164,7 +171,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 9) {
+      if (typeValueThree === 9) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -179,7 +186,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 10) {
+      if (typeValueOne === 10) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -194,7 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 11) {
+      if (typeValueThree === 11) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -209,7 +216,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 12) {
+      if (typeValueThree === 12) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
@@ -224,7 +231,7 @@ window.addEventListener('DOMContentLoaded', () => {
         formTwelve.style.display = 'block';
         formThirteen.style.display = 'none';
       }
-      if (typeValue === 13) {
+      if (typeValueThree === 13) {
         formOne.style.display = 'none';
         formSecond.style.display = 'none';
         formThird.style.display = 'none';
