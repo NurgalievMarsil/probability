@@ -1,11 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
   const changeColor = () => {
-    const colorBtn = document.querySelector('.color__button'),
-      resetColorBtn = document.querySelector('.reset__color'),
-      calculatorContainer = document.querySelector('.calculator__container');
-    colorBtn.addEventListener('click', () => {
-      let randomColor = '#' + (Math.random().toString(16) + '000000').substring(2,8).toUpperCase();
-      calculatorContainer.style.background = randomColor;
+    const resetColorBtn = document.querySelector('.reset__color'),
+      calculatorContainer = document.querySelector('.calculator__container'),
+      colorInput = document.querySelector('.color__input');
+    colorInput.addEventListener('input', () => {
+      calculatorContainer.style.background = colorInput.value;
     });
     resetColorBtn.addEventListener('click', () => {
       calculatorContainer.style.background = '#c9fff9';
@@ -27,10 +26,11 @@ window.addEventListener('DOMContentLoaded', () => {
     formTwelve = document.querySelector('.form__twelve'),
     formThirteen = document.querySelector('.form__thirteen');
     selectButton = document.querySelector('.select__button');
+    selectReset = document.querySelector('.select__reset');
+    const calcOne = document.querySelector('.type-1');
+    const calcSecond = document.querySelector('.type-2');
+    const calcThree = document.querySelector('.type-3');
     selectButton.addEventListener('click', () => {
-      const calcOne = document.querySelector('.type-1');
-      const calcSecond = document.querySelector('.type-2');
-      const calcThree = document.querySelector('.type-3');
 
       let typeValueOne = +calcOne.options[calcOne.selectedIndex].value;
       let typeValueSecond = +calcSecond.options[calcSecond.selectedIndex].value;
@@ -245,6 +245,59 @@ window.addEventListener('DOMContentLoaded', () => {
         formEleven.style.display = 'none';
         formTwelve.style.display = 'none';
         formThirteen.style.display = 'block';
+      }
+    });
+    selectReset.addEventListener('click', () => {
+      calcOne.value = '0';
+      calcSecond.value = '0';
+      calcThree.value = '0';
+      let typeValueOne = +calcOne.options[calcOne.selectedIndex].value;
+      let typeValueSecond = +calcSecond.options[calcSecond.selectedIndex].value;
+      let typeValueThree = +calcThree.options[calcThree.selectedIndex].value;
+      if (typeValueOne === 0) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValueSecond === 0) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
+      }
+      if (typeValueThree === 0) {
+        formOne.style.display = 'none';
+        formSecond.style.display = 'none';
+        formThird.style.display = 'none';
+        formFour.style.display = 'none';
+        formFive.style.display = 'none';
+        formSix.style.display = 'none';
+        formSeven.style.display = 'none';
+        formEight.style.display = 'none';
+        formNine.style.display = 'none';
+        formTen.style.display = 'none';
+        formEleven.style.display = 'none';
+        formTwelve.style.display = 'none';
+        formThirteen.style.display = 'none';
       }
     });
   };

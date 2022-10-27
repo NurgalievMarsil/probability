@@ -16,31 +16,36 @@
   <div class="calculator">
     <div class="calculator__container">
       <div class="change__color">
-        <button class="color__button">Сменить цвет</button>
+        <input type="color" class="color__input">
         <button class="reset__color">Удалить цвет</button>
       </div>
       <div class="select">
-        <select name="" id="" class="calkich type-1">
-          <option value="0">ОГЭ</option>
-          <option value="3">ОГЭ пирожки</option>
-          <option value="10">ОГЭ игральная кость</option>
-        </select>
-        <select name="" id="" class="calkich type-2">
-          <option value="0">ЕГЭ база</option>
-          <option value="4">ЕГЭ база(натуральные числа)</option>
-          <option value="7">ЕГЭ база(экзамен список)</option>
-          <option value="8">ЕГЭ база-профиль(продавцы)</option>
-        </select>
-        <select name="" id="" class="calkich type-3">
-          <option value="0">ЕГЭ профиль</option>
-          <option value="5">ЕГЭ профиль(олимпиада)</option>
-          <option value="6">ЕГЭ профиль(экзамен вопрос)</option>
-          <option value="9">ЕГЭ профиль(биатлонист)</option>
-          <option value="11">ЕГЭ профиль(магазины)</option>
-          <option value="12">ЕГЭ профиль(посуда)</option>
-          <option value="13">ЕГЭ профиль(фонарь)</option>
-        </select>
-        <button class="select__button">Показать</button>
+        <div class="select__wrapper"> 
+          <select name="" id="" class="calkich type-1">
+            <option value="0">ОГЭ</option>
+            <option value="3">ОГЭ пирожки</option>
+            <option value="10">ОГЭ игральная кость</option>
+          </select>
+          <select name="" id="" class="calkich type-2">
+            <option value="0">ЕГЭ база</option>
+            <option value="4">ЕГЭ база(натуральные числа)</option>
+            <option value="7">ЕГЭ база(экзамен список)</option>
+            <option value="8">ЕГЭ база-профиль(продавцы)</option>
+          </select>
+          <select name="" id="" class="calkich type-3">
+            <option value="0">ЕГЭ профиль</option>
+            <option value="5">ЕГЭ профиль(олимпиада)</option>
+            <option value="6">ЕГЭ профиль(экзамен вопрос)</option>
+            <option value="9">ЕГЭ профиль(биатлонист)</option>
+            <option value="11">ЕГЭ профиль(магазины)</option>
+            <option value="12">ЕГЭ профиль(посуда)</option>
+            <option value="13">ЕГЭ профиль(фонарь)</option>
+          </select>
+        </div>
+        <div class="select__buttons">
+          <button class="select__button">Показать</button>
+          <button class="select__reset">Очистить</button>
+        </div>
       </div>
       <form action="" class="form__one">
         <div class="calculator__main">

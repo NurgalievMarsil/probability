@@ -159,14 +159,15 @@ form {
 }
 .select {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 .calkich {
   padding: 7px;
   border-radius: 10px;
-  width: 25%;
+  width: 30%;
 }
 .form__one {
   display: none;
@@ -212,6 +213,26 @@ form {
   padding: 5px;
   margin-top: 5px;
   border-radius: 7px;
+}
+.select__reset {
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+.select__wrapper {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.select__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 .change__color {
   display: flex;
